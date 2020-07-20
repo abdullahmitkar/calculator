@@ -3,6 +3,7 @@ This is a client application that enables user to perform calculation on the web
 
 ## Deployment 
 https://calculatorwithlogs.herokuapp.com
+[![Heroku CI Status](https://calculatorwithlogs.herokuapp.com/last.svg)](https://dashboard.heroku.com/pipelines/ea91ca8f-02d9-48a6-98e2-71ecbe307bab/tests)
 
 ## Server 
 https://github.com/abdullahmitkar/calculator_server
