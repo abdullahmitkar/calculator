@@ -1,0 +1,18 @@
+<section class="items-section">
+	<div class="items-container">
+		<div class="item-list">
+		<h1> Logs </h1>
+		<div class="items">
+		<div *ngFor="let item of items.reverse()">
+			<app-item-card  style="display:block"
+			 
+			[item]="item"
+			[user]="thisUser"> 			
+			</app-item-card>
+		</div>
+		</div>
+		</div>
+		
+		
+	</div> 
+</section>

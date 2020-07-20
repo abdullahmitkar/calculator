@@ -1,0 +1,14 @@
+<div class="root"> 
+	<div class="item_"  
+	[ngClass]= "{ 'positive': item.user == user, 'negative': item.user !=user }" >
+		<div class="calculation">
+			<p> {{ item.calculation }} </p>
+		</div>
+		
+		<div class="user">
+			<p> {{ item.user }} </p>
+		</div>
+	</div>
+	
+	<!--<div class="x-icon-button" (click) = "OnXButtonClick()"> </div>-->
+</div>
