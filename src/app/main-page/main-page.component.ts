@@ -39,9 +39,11 @@ export class MainPageComponent implements OnInit {
 		try{
 			parse(item.calculation);
 			let ev = eval(item.calculation);
-			item.calculation+=" = "+ev;
+			item.calculation = item.calculation.replace("+","%2B");
+			item.calculation = ""+ String(item.calculation).toString() +  '  = ' + ev;
 			
 		} catch(err){
+			item.calculation = item.calculation.replace("+","%2B");
 			item.calculation+=" : Invalid mathematic expression";
 		}
 

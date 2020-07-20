@@ -14,10 +14,10 @@ export class DemoService {
     constructor(private http:HttpClient) {}
  
     getLogs() {
-        return this.http.get<Item[]>('http://localhost:3000/api/getlogs');
+        return this.http.get<Item[]>('https://calculatorwithlogsserver.herokuapp.com/api/getlogs');
     }
 	addLogs(object){
 		let body = 'user='+object.user+'&calculation='+object.calculation;
-		return this.http.post('http://localhost:3000/api/addlogs',body,httpOptions).subscribe();
+		return this.http.post('https://calculatorwithlogsserver.herokuapp.com/api/addlogs',body,httpOptions).subscribe();
 	}
 }
